@@ -5,6 +5,7 @@ from models.Emergency import detect_lang_auto, keyword_category, format_handoff,
 
 # (RECOMMENDATION)
 import numpy as np
+import os
 import pickle
 from tensorflow import keras
 
@@ -165,5 +166,5 @@ def emergency_action():
     })
 
 if __name__ == "__main__":
-    app.run(debug=True, port=5010)
-
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host="0.0.0.0", port=port)
