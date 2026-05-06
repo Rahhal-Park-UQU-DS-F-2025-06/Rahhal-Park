@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body class="home-page">
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <h2 class="logo">Data Scientest Graduation Project</h2>
+
+  <div class="nav-links">
+    <a href="#" onclick="openLogin()">Sign In</a>
+
+    <a href="{{ url_for('main_home') }}" class="active">Home</a>
+    <a href="{{ url_for('recommendation') }}">Recommendation</a>
+    <a href="{{ url_for('waiting') }}">Waiting Time</a>
+    <a href="{{ url_for('reviews') }}">Reviews</a>
+    <a href="{{ url_for('emergency') }}">Emergency Assistant</a>
+  </div>
+</div>
+
+<div class="home-hero">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Welcome to Rahhal Park</h1>
+    <p>Experience a smarter, smoother, and more enjoyable park journey</p>
+  </div>
+
+  <div class="feature-item reveal"></div>
+</div>
+
+
+<div class="about reveal">
+  <h2>About Rahhal</h2>
+  <p class="about-text">
+    Rahhal Park is a smart system that enhances visitor experiences through data-driven insights.<br>
+    It helps you plan better, avoid crowds, and enjoy a more personalized park journey.
+  </p>
+</div>
+
+<div id="loginModal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="close" onclick="closeLogin()">&times;</span>
+
+    <div class="modal-left">
+    <img src="{{ url_for('static', filename='logo.png') }}" class="modal-logo">
+    </div>
+
+  
+    <div class="modal-right">
+
+      <!-- LOGIN -->
+      <div id="loginForm">
+
+        <h2>Welcome Back</h2>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button type="button">Sign In</button>
+
+        <p class="switch">
+          Don't have account?
+          <a href="#" onclick="showSignup(); return false;">Sign Up</a>
+        </p>
+
+      </div>
+
+      <!-- SIGNUP -->
+      <div id="signupForm" style="display:none;">
+
+        <h2>Create Account</h2>
+
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <button type="button">Sign Up</button>
+
+        <p class="switch">
+          Already have an account?
+          <a href="#" onclick="showLogin(); return false;">Sign In</a>
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- FEATURES -->
+<div class="features">
+
+  <div class="feature-item reveal" onclick='location.href="{{ url_for("recommendation") }}"'>
+    <div class="line orange"></div>
+    <h3>Recommendation</h3>
+    <p>Personalized Ride Suggestions</p>
+  </div>
+
+  <div class="feature-item reveal" onclick='location.href="{{ url_for("waiting") }}"'>
+    <div class="line blue"></div>
+    <h3>Waiting Time</h3>
+    <p>Crowd levels & avoid long queues</p>
+  </div>
+
+  <div class="feature-item reveal" onclick='location.href="{{ url_for("reviews") }}"'>
+    <div class="line pink"></div>
+    <h3>Reviews</h3>
+    <p>Insights from Past Visitors</p>
+  </div>
+
+  <div class="feature-item reveal" onclick='location.href="{{ url_for("emergency") }}"'>
+    <div class="line green"></div>
+    <h3>Emergency Assistant</h3>
+    <p>Fast Response to Emergencies</p>
+  </div>
+
+</div>
+<script>
+function openLogin(){
+  document.getElementById("loginModal").style.display = "flex";
+}
+
+function closeLogin(){
+  document.getElementById("loginModal").style.display = "none";
+}
+
+function switchToSignup(){
+  alert("");
+}
+</script>
+
+<script>
+
+function showSignup(){
+  document.getElementById("loginForm").style.display = "none";
+  document.getElementById("signupForm").style.display = "block";
+}
+
+function showLogin(){
+  document.getElementById("signupForm").style.display = "none";
+  document.getElementById("loginForm").style.display = "block";
+}
+
+</script>
+<script>
+const items = document.querySelectorAll('.reveal');
+
+function revealOnScroll(){
+  items.forEach((item, index) => {
+    const top = item.getBoundingClientRect().top;
+    if(top < window.innerHeight - 80){
+      setTimeout(() => {
+        item.classList.add('show');
+      }, index * 120);
+    }
+  });
+}
+
+window.addEventListener('load', revealOnScroll);
+</script>
+
+<div class="footer">
+  Developed By Data Science Students - College of Computing 2026
+</div>
+</body>
+</html>
