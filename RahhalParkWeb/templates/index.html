@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rahhal Park</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+  <h2>Data Scientest Graduation Project</h2>
+
+  <div class="nav-links">
+    <a href="/">1447-2026</a>
+  </div>
+</div>
+
+<div class="hero">
+
+  <div class="bg-shapes"></div>
+
+  <div class="hero-content">
+
+    <img src="{{ url_for('static', filename='logo.png') }}" class="hero-logo">
+
+    <h1 class="main-title">
+      Rahhal Park
+    </h1>
+
+    <p class="subtitle">
+      Avoid crowds. Choose better rides. Enjoy smarter visits
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-enter" onclick="window.location.href='/home'">
+        Enter Park →
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
