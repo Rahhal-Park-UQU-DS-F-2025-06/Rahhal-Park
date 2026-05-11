@@ -74,7 +74,7 @@ Python libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow were used d
 
 ##  Installation & Run
 
-#### 1Create virtual environment
+#### 1 Create virtual environment
 
 ```bash
 python -m venv venv
@@ -112,13 +112,13 @@ python app.py
 http://127.0.0.1:5010
 ```
 
-```md id="vb44p5"
-## 📸 Screenshots
+```md id="rj14a6"
+## Screenshots
 
 ### Landing Page
 
 <p align="center">
-  <img src="screenshots/landing.png" width="800">
+  <img src="screenshots/landing.jpeg" width="800">
 </p>
 
 ---
@@ -126,11 +126,12 @@ http://127.0.0.1:5010
 ### Home Page
 
 <p align="center">
-  <img src="screenshots/home.png" width="800">
+  <img src="screenshots/home.jpeg" width="800">
 </p>
 ```
 
-## Team
+
+## Team Member
 
 Developed by Data Science Students
 College of Computing – Umm Al-Qura University
