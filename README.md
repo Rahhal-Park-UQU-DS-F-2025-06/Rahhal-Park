@@ -15,38 +15,46 @@ Rahhal Park solves these problems through an integrated AI-powered platform.
 
 
 # Project Features
-#Recommendation System#
+## Recommendation System
 Provides personalized ride and activity recommendations based on:
-
 - Age group
 - Height & weight
 - Health conditions
 - Visitor preferences
 - Fear of heights
 - Group type
-
 Built using TensorFlow and Deep Learning models.
 
-# Waiting Time & Crowd Prediction
+## Waiting Time & Crowd Prediction
 Predicts:
 - Crowd level
 - Estimated waiting time
-
 Using Random Forest machine learning models and temporal features.
 
-# Sentiment Analysis
+## Sentiment Analysis
 Analyzes visitor reviews and classifies them into:
 - Positive
 - Negative
-
 Using TF-IDF and Logistic Regression
 
-# Emergency Assistant
+## Emergency Assistant
 A bilingual emergency chatbot (Arabic & English) that detects:
 - Medical emergencies
 - Security incidents
 - Fire & safety issues
-
 The chatbot automatically generates a case ID and routes the report to the appropriate team.
+
+# About the Dataset
+The datasets used in Rahhal Park were collected from public sources such as Kaggle and processed through a unified preprocessing pipeline before training the machine learning models.
+
+The collected datasets include structured, temporal, and textual data to support different intelligent services within the platform.
+
+| Dataset                 | Description                                                                                                        |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Recommendation Dataset  | Visitor demographic and preference data including age, height, weight, health conditions, and activity preferences |
+| Crowd & Waiting Dataset | Historical attendance, temporal patterns, waiting time, and crowd-related records                                  |
+| Sentiment Dataset       | Visitor reviews and feedback used for sentiment classification                                                     |
+| Emergency Dataset       | Bilingual Arabic & English emergency keywords for emergency detection                                              |
+
 
 
