@@ -15,7 +15,7 @@ Rahhal Park solves these problems through an integrated AI-powered platform.
 
 
 # Project Features
-*Recommendation System*
+#Recommendation System#
 Provides personalized ride and activity recommendations based on:
 
 - Age group
@@ -27,7 +27,7 @@ Provides personalized ride and activity recommendations based on:
 
 Built using TensorFlow and Deep Learning models.
 
-*Waiting Time & Crowd Prediction*
+#Waiting Time & Crowd Prediction#
 Predicts:
 
 - Crowd level
@@ -35,7 +35,7 @@ Predicts:
 
 Using Random Forest machine learning models and temporal features.
 
-*Sentiment Analysis*
+#Sentiment Analysis#
 Analyzes visitor reviews and classifies them into:
 
 - Positive
@@ -43,7 +43,7 @@ Analyzes visitor reviews and classifies them into:
 
 Using TF-IDF and Logistic Regression
 
-*Emergency Assistant*
+#Emergency Assistant#
 A bilingual emergency chatbot (Arabic & English) that detects:
 
 - Medical emergencies
