@@ -71,3 +71,77 @@ Python libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow were used d
 - Recommendation Dataset: [Click Here](https://www.kaggle.com/datasets/example)
 - Waitin Time & Crowd Level Dataset: [Click Here](https://www.kaggle.com/datasets/ayushtankha/hackathon?select=waiting_times.csv)
 - Sentiment(Reviews) Dataset: [Click Here](https://www.kaggle.com/datasets/dwiknrd/reviewuniversalstudio)
+
+##  Installation & Run
+
+#### 1Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+#### 2 Activate virtual environment
+
+##### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+##### Mac / Linux
+
+```bash
+source venv/bin/activate
+```
+
+#### 3 Install required packages
+
+```bash
+pip install -r requirements.txt
+```
+
+#### 4 Run the application
+
+```bash
+python app.py
+```
+
+#### 5 Open in browser
+
+```bash
+http://127.0.0.1:5010
+```
+
+```md id="vb44p5"
+## 📸 Screenshots
+
+### Landing Page
+
+<p align="center">
+  <img src="screenshots/landing.png" width="800">
+</p>
+
+---
+
+### Home Page
+
+<p align="center">
+  <img src="screenshots/home.png" width="800">
+</p>
+```
+
+## Team
+
+Developed by Data Science Students
+College of Computing – Umm Al-Qura University
+2026
+
+- Rahaf Yaseen Barnawi
+- Hala Fayez Alharbi
+- Sarah Khaled Alotaibi
+- Raghad Adel Alzulafi
+
+## License
+This project was developed for academic purposes as a Graduation Project.
+
+
