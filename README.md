@@ -52,9 +52,22 @@ The collected datasets include structured, temporal, and textual data to support
 | Dataset                 | Description                                                                                                        |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Recommendation Dataset  | Visitor demographic and preference data including age, height, weight, health conditions, and activity preferences |
-| Crowd & Waiting Dataset | Historical attendance, temporal patterns, waiting time, and crowd-related records                                  |
+| Waiting Time & Crowd Dataset | Historical attendance, temporal patterns, waiting time, and crowd-related records                                  |
 | Sentiment Dataset       | Visitor reviews and feedback used for sentiment classification                                                     |
 | Emergency Dataset       | Bilingual Arabic & English emergency keywords for emergency detection                                              |
 
+## Data Preprocessing
+Several preprocessing techniques were applied before training, including:
+- Missing value handling
+- Duplicate removal
+- Text cleaning
+- Feature encoding
+- Normalization
+- TF-IDF vectorization
+- Feature engineering
+Python libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow were used during preprocessing and model development
 
-
+## Dataset Sources
+Recommendation Dataset: [Click Here](https://www.kaggle.com/datasets/example)
+Waitin Time & Crowd Level Dataset: [Click Here](https://www.kaggle.com/datasets/ayushtankha/hackathon?select=waiting_times.csv)
+Sentiment(Reviews) Dataset: [Click Here](https://www.kaggle.com/datasets/dwiknrd/reviewuniversalstudio)
