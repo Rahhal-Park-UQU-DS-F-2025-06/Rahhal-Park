@@ -15,7 +15,7 @@ Rahhal Park solves these problems through an integrated AI-powered platform.
 
 
 # Project Features
-Recommendation System
+# Recommendation System # 
 Provides personalized ride and activity recommendations based on:
 
 - Age group
