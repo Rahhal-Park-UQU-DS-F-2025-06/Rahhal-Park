@@ -15,7 +15,7 @@ Rahhal Park solves these problems through an integrated AI-powered platform.
 
 
 # Project Features
-## Recommendation System
+### Recommendation System
 Provides personalized ride and activity recommendations based on:
 - Age group
 - Height & weight
@@ -25,19 +25,19 @@ Provides personalized ride and activity recommendations based on:
 - Group type
 Built using TensorFlow and Deep Learning models.
 
-## Waiting Time & Crowd Prediction
+### Waiting Time & Crowd Prediction
 Predicts:
 - Crowd level
 - Estimated waiting time
 Using Random Forest machine learning models and temporal features.
 
-## Sentiment Analysis
+### Sentiment Analysis
 Analyzes visitor reviews and classifies them into:
 - Positive
 - Negative
 Using TF-IDF and Logistic Regression
 
-## Emergency Assistant
+### Emergency Assistant
 A bilingual emergency chatbot (Arabic & English) that detects:
 - Medical emergencies
 - Security incidents
@@ -56,7 +56,7 @@ The collected datasets include structured, temporal, and textual data to support
 | Sentiment Dataset       | Visitor reviews and feedback used for sentiment classification                                                     |
 | Emergency Dataset       | Bilingual Arabic & English emergency keywords for emergency detection                                              |
 
-## Data Preprocessing
+### Data Preprocessing
 Several preprocessing techniques were applied before training, including:
 - Missing value handling
 - Duplicate removal
@@ -67,7 +67,7 @@ Several preprocessing techniques were applied before training, including:
 - Feature engineering
 Python libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow were used during preprocessing and model development
 
-## Dataset Sources
+### Dataset Sources
 - Recommendation Dataset: [Click Here](https://www.kaggle.com/datasets/example)
 - Waitin Time & Crowd Level Dataset: [Click Here](https://www.kaggle.com/datasets/ayushtankha/hackathon?select=waiting_times.csv)
 - Sentiment(Reviews) Dataset: [Click Here](https://www.kaggle.com/datasets/dwiknrd/reviewuniversalstudio)
