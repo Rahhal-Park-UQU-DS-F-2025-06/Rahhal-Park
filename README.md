@@ -29,12 +29,14 @@ Built using TensorFlow and Deep Learning models.
 Predicts:
 - Crowd level
 - Estimated waiting time
+  
 Using Random Forest machine learning models and temporal features.
 
 ### Sentiment Analysis
 Analyzes visitor reviews and classifies them into:
 - Positive
 - Negative
+ 
 Using TF-IDF and Logistic Regression
 
 ### Emergency Assistant
@@ -42,6 +44,7 @@ A bilingual emergency chatbot (Arabic & English) that detects:
 - Medical emergencies
 - Security incidents
 - Fire & safety issues
+  
 The chatbot automatically generates a case ID and routes the report to the appropriate team.
 
 # About the Dataset
@@ -65,6 +68,7 @@ Several preprocessing techniques were applied before training, including:
 - Normalization
 - TF-IDF vectorization
 - Feature engineering
+  
 Python libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow were used during preprocessing and model development
 
 ### Dataset Sources
@@ -127,9 +131,6 @@ http://127.0.0.1:5010
 <p align="center">
   <img src="./screenshots/home.jpeg" width="800">
 </p>
-```
-
-
 
 
 ## Team Member
