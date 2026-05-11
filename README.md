@@ -112,14 +112,24 @@ python app.py
 http://127.0.0.1:5010
 ```
 
-```md id="rj14a6"
-## Screenshots
+
+##  Screenshots
 
 ### Landing Page
 
 <p align="center">
-  <img src="screenshots/landing.jpeg" width="800">
+  <img src="./screenshots/landing.jpeg" width="800">
 </p>
+
+---
+
+### Home Page
+
+<p align="center">
+  <img src="./screenshots/home.jpeg" width="800">
+</p>
+```
+
 
 ---
 
