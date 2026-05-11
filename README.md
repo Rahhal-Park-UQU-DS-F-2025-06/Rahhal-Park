@@ -68,6 +68,6 @@ Several preprocessing techniques were applied before training, including:
 Python libraries such as Pandas, NumPy, Scikit-learn, and TensorFlow were used during preprocessing and model development
 
 ## Dataset Sources
-Recommendation Dataset: [Click Here](https://www.kaggle.com/datasets/example)
-Waitin Time & Crowd Level Dataset: [Click Here](https://www.kaggle.com/datasets/ayushtankha/hackathon?select=waiting_times.csv)
-Sentiment(Reviews) Dataset: [Click Here](https://www.kaggle.com/datasets/dwiknrd/reviewuniversalstudio)
+- Recommendation Dataset: [Click Here](https://www.kaggle.com/datasets/example)
+- Waitin Time & Crowd Level Dataset: [Click Here](https://www.kaggle.com/datasets/ayushtankha/hackathon?select=waiting_times.csv)
+- Sentiment(Reviews) Dataset: [Click Here](https://www.kaggle.com/datasets/dwiknrd/reviewuniversalstudio)
