@@ -5,11 +5,11 @@ Rahhal Park is an intelligent web-based platform designed to improve visitor exp
 # Problem Statement 
 Visitors in entertainment parks often face challenges such as:
 
-1- Choosing suitable rides and activities.
-2- Long waiting times and crowded areas.
-3- Difficulty obtaining emergency assistance quickly.
-4- Lack of personalized recommendations.
-5- Limited use of visitor feedback for service improvement.
+- Choosing suitable rides and activities.
+- Long waiting times and crowded areas.
+- Difficulty obtaining emergency assistance quickly.
+- Lack of personalized recommendations.
+- Limited use of visitor feedback for service improvement.
 
 Rahhal Park solves these problems through an integrated AI-powered platform.
 
@@ -18,10 +18,10 @@ Rahhal Park solves these problems through an integrated AI-powered platform.
 Recommendation System
 Provides personalized ride and activity recommendations based on:
 
-Age group
-Height & weight
-Health conditions
-Visitor preferences
+- Age group
+- Height & weight
+- Health conditions
+- Visitor preferences
 - Fear of heights
 - Group type
 
