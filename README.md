@@ -131,14 +131,6 @@ http://127.0.0.1:5010
 ```
 
 
----
-
-### Home Page
-
-<p align="center">
-  <img src="screenshots/home.jpeg" width="800">
-</p>
-```
 
 
 ## Team Member
