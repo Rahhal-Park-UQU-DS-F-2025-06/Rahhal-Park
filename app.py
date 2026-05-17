@@ -82,7 +82,7 @@ def waiting():
     return render_template('waiting.html')
 
 #(RECOMMENDATION)
-rec_model = keras.models.load_model("models/API/recommendation_model.h5")
+rec_model = keras.models.load_model("models/API/recommendation_model.keras")
 
 with open("models/API/encoders_X.pkl", "rb") as f:
     encoders_X = pickle.load(f)
