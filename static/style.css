@@ -88,7 +88,7 @@ html, body{
   height:50vh;
   margin-top:80px;
 
-  background:url("/static/park1.jpg") center/cover no-repeat;
+  background:url("/static/Park1.jpg") center/cover no-repeat;
 
   display:flex;
   justify-content:center;
