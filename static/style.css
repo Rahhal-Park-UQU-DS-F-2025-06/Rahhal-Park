@@ -1238,8 +1238,18 @@ input, select, textarea {
 
 }
 
+@media screen and (max-width:768px){
+
+.navbar{
+  min-height:55px;
+  padding-top:4px;
+  padding-bottom:4px;
+  gap:4px;
+  }
+}
+
 .hero{
-  margin-top:80px;
+  margin-top:60px;
 }
 .hero-content{
   transform:translateY(-70px);
