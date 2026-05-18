@@ -1237,41 +1237,7 @@ input, select, textarea {
   }
 
 }
-@media screen and (max-width:768px){
 
-  .navbar{
-    padding-top: 20px;
-    padding-bottom: 15px;
-  }
-
-  .hero,
-  .home-hero,
-  .main,
-  .dashboard-page .main,
-  .recommendation-page .main,
-  .sentiment-page .main{
-    margin-top: 140px;
-  }
-
-}
-@media screen and (max-width:768px){
-
-.navbar{
-  min-height:95px;
-  padding-top:45px;
-  padding-bottom:0;
-  gap:0;
-}
-
-  .home-hero{
-    margin-top:100px;
-  }
-
-  .home-hero .hero-content{
-    top:60%;
-  }
-
-}
 .hero{
   margin-top:80px;
 }
@@ -1279,5 +1245,5 @@ input, select, textarea {
   transform:translateY(-70px);
 }
 .chat-container{
-  margin-top:190px;
+  margin-top:120px;
 }
