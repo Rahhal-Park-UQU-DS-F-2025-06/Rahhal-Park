@@ -114,7 +114,10 @@ python app.py
 ```bash
 http://127.0.0.1:5010
 ```
+## Deployment
 
+The application is deployed and publicly accessible through Render:
+https://rahhalpark-gp2026.onrender.com
 
 ##  Screenshots
 
