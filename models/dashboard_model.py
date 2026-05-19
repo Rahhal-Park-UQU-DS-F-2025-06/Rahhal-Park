@@ -4,17 +4,12 @@ import json
 import os
 from datetime import datetime
 
-# =========================================
-# 🔥 تحميل المودلات
-# =========================================
+
 crowd_model = joblib.load("models/API/crowd_classifier.pkl")
 wait_model = joblib.load("models/API/wait_time_regressor.pkl")
 label_encoder = joblib.load("models/API/label_encoder.pkl")
 day_encoder = joblib.load("models/API/day_encoder.pkl")
 
-# =========================================
-# 🔥 ملف التخزين (يتعلم)
-# =========================================
 HISTORY_PATH = "models/API/user_history.json"
 
 
@@ -33,13 +28,9 @@ def save_history(data):
         json.dump(data, f, indent=2)
 
 
-# =========================================
-# 🔥 الذكاء (محسن)
-# =========================================
 def compute_adaptive_features(history, month, is_weekend):
 
-    # 🎯 1. baseline قوي حسب الموسم
-    if month in [6, 7, 8]:  # الصيف 🔥
+    if month in [6, 7, 8]:  # الصيف 
         base = 60000
     elif month in [12, 1]:  # إجازات
         base = 50000
@@ -48,24 +39,19 @@ def compute_adaptive_features(history, month, is_weekend):
     else:  # باقي الأيام
         base = 25000
 
-    # 🎯 2. تأثير الويكند (أقوى)
     if is_weekend:
         base *= 1.5
 
-    # 🎯 3. التعلم من history (بدون ما ينزل القيم)
     if history:
         waits = [h["wait"] for h in history if "wait" in h]
 
         if waits:
             avg_wait = np.mean(waits)
 
-            # نحول الانتظار إلى attendance قوي
             learned = avg_wait * 1200
 
-            # نختار الأكبر عشان ما يضعف
             base = max(base, learned)
 
-    # 🎯 4. تحويلها لـ features (نفس التدريب)
     lag1 = base
     lag7 = base * 1.05
     roll7 = base * 1.02
@@ -74,9 +60,6 @@ def compute_adaptive_features(history, month, is_weekend):
     return lag1, lag7, roll7, diff1
 
 
-# =========================================
-# 🔥 prediction
-# =========================================
 def predict_dashboard(date_str):
 
     history = load_history()
@@ -95,7 +78,7 @@ def predict_dashboard(date_str):
         history, month, is_weekend
     )
 
-    # 🔥 نفس ترتيب التدريب (مهم جدًا)
+   
     X = np.array([[
         month,
         is_weekend,
@@ -117,9 +100,7 @@ def predict_dashboard(date_str):
 
     print("PREDICTED:", crowd, wait)
 
-    # =========================================
-    # 🔥 التعلم (تخزين)
-    # =========================================
+
     history.append({
         "date": date_str,
         "crowd": crowd,
